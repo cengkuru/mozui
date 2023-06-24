@@ -1,0 +1,43 @@
+
+@import 'styles/variables';
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px; font-weight: 400; line-height: 1.42857143;
+   background-color: #F7F7F7; }
+
+
+.menu-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar.mat-primary {
+  background: $color-primary;
+  color: $color-tertiary-light;
+}
+.mat-drawer-container {
+  background-color: #F7F7F7;
+  color: $color-text;
+}
+
+
+.mat-drawer {
+  background-color: $color-primary-dark;
+  color: #fff;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-sidenav-container {
+  flex-grow: 1;
+}
+
+mat-sidenav-content {
+  padding: 20px; /* Increase the padding value as desired */
+  flex: 1;
+}
+
